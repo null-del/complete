@@ -1,0 +1,9 @@
+cmd_scripts/mod/empty.o := /home/solitaryfool/clang10/bin/clang -Wp,-MD,scripts/mod/.empty.o.d  -nostdinc -isystem /home/solitaryfool/clang10/lib64/clang/11.0.4/include -I../arch/arm64/include -Iarch/arm64/include/generated/uapi -Iarch/arm64/include/generated  -I../include -Iinclude -I../arch/arm64/include/uapi -Iarch/arm64/include/generated/uapi -I../include/uapi -Iinclude/generated/uapi -include ../include/linux/kconfig.h  -I../scripts/mod -Iscripts/mod -D__KERNEL__ -Qunused-arguments -mlittle-endian -Wall -Wundef -Wstrict-prototypes -Wno-trigraphs -pipe -fno-strict-aliasing -fno-common -Werror-implicit-function-declaration -Wno-format-security -std=gnu89 -fno-PIE --target=aarch64-linux-gnu --gcc-toolchain=/ --prefix= -Wno-pointer-to-enum-cast -mgeneral-regs-only -DCONFIG_AS_LSE=1 -DCONFIG_VDSO32=1 -fno-pic -fno-asynchronous-unwind-tables -Wno-psabi -DCONFIG_ARCH_SUPPORTS_INT128 -Wno-asm-operand-widths -O3 -mcpu=cortex-a53 -fno-delete-null-pointer-checks -Wno-frame-address -Wno-int-in-bool-context -Wno-address-of-packed-member -Werror --param=allow-store-data-races=0 -fstack-protector -Wno-format-invalid-specifier -Wno-gnu -Wno-duplicate-decl-specifier -Wno-tautological-compare -Wno-misleading-indentation -Wno-unused-const-variable -fomit-frame-pointer -Wdeclaration-after-statement -Wno-pointer-sign -fno-strict-overflow -fno-merge-all-constants -fno-stack-check -Werror=implicit-int -Werror=strict-prototypes -Werror=date-time -Wno-initializer-overrides -Wno-unused-value -Wno-format -Wno-sign-compare -Wno-format-zero-length    -D"KBUILD_STR(s)=$(pound)s" -D"KBUILD_BASENAME=KBUILD_STR(empty)"  -D"KBUILD_MODNAME=KBUILD_STR(empty)" -c -o scripts/mod/empty.o ../scripts/mod/empty.c
+
+source_scripts/mod/empty.o := ../scripts/mod/empty.c
+
+deps_scripts/mod/empty.o := \
+
+scripts/mod/empty.o: $(deps_scripts/mod/empty.o)
+
+$(deps_scripts/mod/empty.o):
